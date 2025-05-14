@@ -1,0 +1,126 @@
+Análise Completa e Detalhada do Desafio ClickBus 2025 – FIAP
+Contexto Geral
+O desafio ClickBus 2025 é uma iniciativa prática e estratégica para alunos aplicarem seus conhecimentos em Data Science em um cenário real de negócio. A proposta é viabilizar insights e soluções baseadas em dados para uma das maiores plataformas de venda de passagens rodoviárias do Brasil.
+
+A ClickBus, desde 2013, atua como uma Travel Tech com forte presença no setor de transporte rodoviário, oferecendo uma experiência digital completa em um mercado que ainda é majoritariamente offline (65–70%). O setor movimenta cerca de R$ 20 bilhões por ano e mais de 170 milhões de passagens/ano, com mais de 6.800 destinos possíveis.
+
+📌 Objetivo Central do Desafio
+Usar um dataset real e anonimizado, contendo a jornada de compra de ~800 mil clientes, para resolver três desafios distintos, mas conectados, relacionados ao comportamento de consumo.
+
+🚧 PARTE 1: Decodificando o Comportamento do Cliente
+➤ Tipo de problema: Segmentação de Clientes
+🎯 Objetivo
+Agrupar os clientes em perfis distintos com base no seu comportamento de compra. Isso permitirá que a empresa direcione estratégias personalizadas (promoções, e-mails, notificações, pushs etc.) por perfil.
+
+🔍 O que analisar
+Frequência de compra
+
+Trechos favoritos (origem/destino)
+
+Valor gasto por compra
+
+Quantidade de passagens por compra
+
+Recência (última data de compra)
+
+Presença de viagens de ida e volta
+
+Comportamento por canal (web/app)
+
+🎁 Entregáveis extras
+Dashboard interativo (Power BI, Tableau, Streamlit ou Dash) para visualização e acompanhamento do comportamento dos segmentos.
+
+Possível aplicação de técnicas de clustering como K-Means, DBSCAN ou Hierárquico.
+
+🚧 PARTE 2: O Timing é Tudo
+➤ Tipo de problema: Classificação binária / Previsão temporal
+🎯 Objetivo
+Prever se um cliente irá realizar uma nova compra dentro de uma janela temporal (próximos 7 ou 30 dias).
+
+🧠 Abordagem esperada
+Modelos supervisionados como Random Forest, XGBoost, LightGBM, Redes Neurais ou até modelos temporais (ARIMA, Prophet, LSTM).
+
+Feature engineering robusta com:
+
+Data da última compra
+
+Intervalos entre compras
+
+Frequência média de compra
+
+Padrões semanais/mensais
+
+🎯 Extra
+Prever quantos dias faltam até a próxima compra (regressão).
+
+🚧 PARTE 3: A Estrada à Frente
+➤ Tipo de problema: Classificação multi-classe ou sistema de recomendação
+🎯 Objetivo
+Prever qual será o próximo trecho (par origem-destino) que um cliente irá comprar.
+
+🔍 Como abordar
+Classificação multiclasse com base no histórico individual
+
+Recomendação baseada em sequências (ex: modelo Markov, RNN, Transformers)
+
+Sistemas colaborativos ou baseados em conteúdo
+
+🎯 Extra
+Combinar com o desafio 2 e prever data e trecho da próxima compra → solução integrada e altamente aplicável.
+
+📂 Dados Disponíveis
+Você recebeu um dataset anonimizado com colunas como:
+
+Variável	Significado
+nk_ota_localizer_id	ID da compra
+fk_contact	ID do cliente
+date_purchase / time_purchase	Data e hora da compra
+place_origin / destination_*	Origem e destino das viagens (ida e volta)
+fk_*_ota_bus_company	Empresa responsável (ida e volta)
+gmv_success	Valor total gasto pelo cliente
+total_tickets_quantity_success	Quantidade de passagens compradas
+
+🎯 Requisitos e Entregas
+Apresentação executiva com storytelling, insights e soluções.
+
+Backup técnico com relatório detalhado (metodologia, métricas, validação dos modelos, conclusões).
+
+Predições para 50.000 clientes (classificação e regressão).
+
+Códigos Python organizados, reprodutíveis e com documentação.
+
+🧠 Fatores Externos Importantes
+O comportamento de compra é impactado por:
+
+Feriados (alta demanda)
+
+Eventos culturais/festivos
+
+Estação do ano
+
+Condições climáticas
+
+Situação econômica
+
+Ações da concorrência
+
+→ Incluir variáveis exógenas pode aumentar a acurácia dos modelos.
+
+🚨 Considerações Legais
+Os dados são confidenciais. O uso é estritamente limitado ao desafio.
+
+Qualquer violação pode gerar implicações legais.
+
+📈 Oportunidades de Destaque
+Criar um pipeline de dados profissional.
+
+Testar modelos com validação cruzada e métricas robustas (AUC, F1, RMSE).
+
+Integrar dashboards + modelos preditivos.
+
+Propor ideias visionárias: modelos embarcados em apps, estratégias de push personalizadas, uso de IA generativa, simulações de campanhas por cluster etc.
+
+🧭 Conclusão
+Este não é só um desafio técnico. É uma simulação de um projeto real de Data Science aplicado a negócios, com impacto direto em estratégias de marketing, produto e customer success.
+
+A ClickBus quer mais do que um modelo – quer inteligência aplicável, visão de futuro e capacidade de execução.

@@ -1,0 +1,14 @@
+Coluna                          | Descrição                                                                 | Tipo
+---------------------------------------------------------------------------------------------------------------
+nk_ota_localizer_id            | ID da compra (order)                                                      | string
+fk_contact                     | ID do cliente                                                             | string
+date_purchase                  | Data da compra (formato: YYYY-MM-DD, ex: 2018-12-26)                      | string
+time_purchase                  | Hora da compra (formato: HH:mm:ss, ex: 15:33:35)                          | string
+place_origin_departure        | Origem da viagem de ida                                                   | string
+place_destination_departure   | Destino da viagem de ida                                                  | string
+place_origin_return           | Origem da viagem de retorno (0 se não há retorno)                         | string
+place_destination_return      | Destino da viagem de retorno (0 se não há retorno)                        | string
+fk_departure_ota_bus_company  | Viação da viagem de ida                                                   | string
+fk_return_ota_bus_company     | Variação da viagem de retorno (1 se não há retorno)                       | string
+gmv_success                   | Valor total do ticket                                                     | float
+total_tickets_quantity_success| Quantidade de passagens por compra                                        | int
